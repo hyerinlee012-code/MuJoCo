@@ -1,0 +1,54 @@
+<mujoco model="fr3_grasp">
+
+  <include file="../../mujoco_menagerie/franka_fr3/fr3_panda_gripper.xml"/>
+
+  <statistic center="0.2 0 0.4" extent=".8"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="120" elevation="-20"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0"
+             width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge"
+             rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+             markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true"
+              texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+    <geom name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
+
+   
+    <body name="table" pos="0.5 0 0.45">
+      <geom type="box" size="0.4 0.4 0.02"
+            rgba="0.6 0.5 0.4 1" mass="10"/>
+    </body>
+    
+    <!-- 파지 물체 -->
+    <body name="object" pos="0.5 0 0.54">
+      <joint name="object_free" type="free"/>
+      <geom name="obj_geom"
+            type="cylinder"
+            size="0.033 0.06"
+            mass="0.3"
+            friction="0.6 0.01 0.01"
+            rgba="0.8 0.2 0.2 1"/>
+    </body>
+  </worldbody>
+
+  <!-- 센서 -->
+  <sensor>
+    <touch       name="left_touch"  site="left_pad_site"/>
+    <touch       name="right_touch" site="right_pad_site"/>
+    <framepos    name="obj_pos"     objtype="body" objname="object"/>
+    <framelinvel name="obj_linvel"  objtype="body" objname="object"/>
+    <frameangvel name="obj_angvel"  objtype="body" objname="object"/>
+  </sensor>
+
+</mujoco>
