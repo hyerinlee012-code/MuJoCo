@@ -111,25 +111,25 @@
     <mesh name="link7_coll" file="link7.stl"/>
 
     <!-- Panda gripper meshes -->
-    <mesh name="hand_c" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand.stl"/>
-    <mesh name="hand_0" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_0.obj"/>
-    <mesh name="hand_1" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_1.obj"/>
-    <mesh name="hand_2" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_2.obj"/>
-    <mesh name="hand_3" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_3.obj"/>
-    <mesh name="hand_4" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_4.obj"/>
-    <mesh name="finger_0" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/finger_0.obj"/>
-    <mesh name="finger_1" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/finger_1.obj"/>
+    <mesh name="hand_c" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand.stl"/>
+    <mesh name="hand_0" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_0.obj"/>
+    <mesh name="hand_1" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_1.obj"/>
+    <mesh name="hand_2" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_2.obj"/>
+    <mesh name="hand_3" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_3.obj"/>
+    <mesh name="hand_4" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_4.obj"/>
+    <mesh name="finger_0" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/finger_0.obj"/>
+    <mesh name="finger_1" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/finger_1.obj"/>
 
     <!-- D435i meshes -->
-    <mesh name="d435i_0" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_0.obj"/>
-    <mesh name="d435i_1" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_1.obj"/>
-    <mesh name="d435i_2" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_2.obj"/>
-    <mesh name="d435i_3" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_3.obj"/>
-    <mesh name="d435i_4" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_4.obj"/>
-    <mesh name="d435i_5" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_5.obj"/>
-    <mesh name="d435i_6" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_6.obj"/>
-    <mesh name="d435i_7" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_7.obj"/>
-    <mesh name="d435i_8" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_8.obj"/>
+    <mesh name="d435i_0" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_0.obj"/>
+    <mesh name="d435i_1" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_1.obj"/>
+    <mesh name="d435i_2" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_2.obj"/>
+    <mesh name="d435i_3" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_3.obj"/>
+    <mesh name="d435i_4" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_4.obj"/>
+    <mesh name="d435i_5" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_5.obj"/>
+    <mesh name="d435i_6" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_6.obj"/>
+    <mesh name="d435i_7" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_7.obj"/>
+    <mesh name="d435i_8" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_8.obj"/>
   </asset>
 
   <worldbody>

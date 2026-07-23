@@ -1,6 +1,6 @@
 <mujoco model="fr3_grasp">
 
-  <include file="../../mujoco_menagerie/franka_fr3/fr3_panda_gripper.xml"/>
+  <include file="../../franka_fr3/fr3_panda_gripper.xml"/>
 
   <statistic center="0.2 0 0.4" extent=".8"/>
 

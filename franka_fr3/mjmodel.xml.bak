@@ -93,14 +93,14 @@
     <mesh name="link5_coll" file="link5.stl"/>
     <mesh name="link6_coll" file="link6.stl"/>
     <mesh name="link7_coll" file="link7.stl"/>
-    <mesh name="hand_c" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand.stl"/>
-    <mesh name="hand_0" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_0.obj"/>
-    <mesh name="hand_1" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_1.obj"/>
-    <mesh name="hand_2" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_2.obj"/>
-    <mesh name="hand_3" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_3.obj"/>
-    <mesh name="hand_4" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_4.obj"/>
-    <mesh name="finger_0" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/finger_0.obj"/>
-    <mesh name="finger_1" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/finger_1.obj"/>
+    <mesh name="hand_c" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand.stl"/>
+    <mesh name="hand_0" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_0.obj"/>
+    <mesh name="hand_1" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_1.obj"/>
+    <mesh name="hand_2" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_2.obj"/>
+    <mesh name="hand_3" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_3.obj"/>
+    <mesh name="hand_4" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_4.obj"/>
+    <mesh name="finger_0" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/finger_0.obj"/>
+    <mesh name="finger_1" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/finger_1.obj"/>
   </asset>
 
   <worldbody>

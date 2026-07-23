@@ -1,5 +1,5 @@
 <mujoco model="fr3_grasp">
-  <compiler angle="radian" meshdir="/home/cdsl/mujoco_menagerie/franka_fr3/assets/"/>
+  <compiler angle="radian" meshdir="/home/cdsl/MuJoCo/franka_fr3/assets/"/>
 
   <option integrator="implicit"/>
 
@@ -106,23 +106,23 @@
     <mesh name="link5_coll" content_type="model/stl" file="link5.stl"/>
     <mesh name="link6_coll" content_type="model/stl" file="link6.stl"/>
     <mesh name="link7_coll" content_type="model/stl" file="link7.stl"/>
-    <mesh name="hand_c" content_type="model/stl" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand.stl"/>
-    <mesh name="hand_0" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_0.obj"/>
-    <mesh name="hand_1" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_1.obj"/>
-    <mesh name="hand_2" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_2.obj"/>
-    <mesh name="hand_3" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_3.obj"/>
-    <mesh name="hand_4" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/hand_4.obj"/>
-    <mesh name="finger_0" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/finger_0.obj"/>
-    <mesh name="finger_1" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/franka_emika_panda/assets/finger_1.obj"/>
-    <mesh name="d435i_0" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_0.obj"/>
-    <mesh name="d435i_1" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_1.obj"/>
-    <mesh name="d435i_2" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_2.obj"/>
-    <mesh name="d435i_3" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_3.obj"/>
-    <mesh name="d435i_4" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_4.obj"/>
-    <mesh name="d435i_5" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_5.obj"/>
-    <mesh name="d435i_6" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_6.obj"/>
-    <mesh name="d435i_7" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_7.obj"/>
-    <mesh name="d435i_8" content_type="model/obj" file="/home/cdsl/mujoco_menagerie/realsense_d435i/assets/d435i_8.obj"/>
+    <mesh name="hand_c" content_type="model/stl" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand.stl"/>
+    <mesh name="hand_0" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_0.obj"/>
+    <mesh name="hand_1" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_1.obj"/>
+    <mesh name="hand_2" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_2.obj"/>
+    <mesh name="hand_3" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_3.obj"/>
+    <mesh name="hand_4" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/hand_4.obj"/>
+    <mesh name="finger_0" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/finger_0.obj"/>
+    <mesh name="finger_1" content_type="model/obj" file="/home/cdsl/MuJoCo/franka_emika_panda/assets/finger_1.obj"/>
+    <mesh name="d435i_0" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_0.obj"/>
+    <mesh name="d435i_1" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_1.obj"/>
+    <mesh name="d435i_2" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_2.obj"/>
+    <mesh name="d435i_3" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_3.obj"/>
+    <mesh name="d435i_4" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_4.obj"/>
+    <mesh name="d435i_5" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_5.obj"/>
+    <mesh name="d435i_6" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_6.obj"/>
+    <mesh name="d435i_7" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_7.obj"/>
+    <mesh name="d435i_8" content_type="model/obj" file="/home/cdsl/MuJoCo/realsense_d435i/assets/d435i_8.obj"/>
   </asset>
 
   <worldbody>

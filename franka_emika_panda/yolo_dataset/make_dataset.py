@@ -30,7 +30,7 @@ def get_yolo_coords(segmentation_img, target_id):
     return x_center, y_center, w, h
 
 # 4. 루프 시작
-print("🚀 데이터 생성을 시작합니다...")
+print("데이터 생성을 시작합니다...")
 for i in range(500):
     data.qpos[0:2] = [np.random.uniform(0.4, 0.7), np.random.uniform(-0.2, 0.2)]
     mujoco.mj_forward(model, data)
@@ -48,6 +48,6 @@ for i in range(500):
         with open(f'yolo_dataset/labels/glass_{i:04d}.txt', 'w') as f:
             f.write(f"{CLASS_ID} {coords[0]:.6f} {coords[1]:.6f} {coords[2]:.6f} {coords[3]:.6f}\n")
 
-    if i % 50 == 0: print(f"✅ {i}/500 완료")
+    if i % 50 == 0: print(f"{i}/500 완료")
 
-print("🎉 완성!")
+print("완성!")
