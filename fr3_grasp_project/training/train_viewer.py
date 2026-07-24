@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from stable_baselines3 import SAC
 from stable_baselines3.common.env_checker import check_env
 from stable_baselines3.common.callbacks import EvalCallback, CheckpointCallback, BaseCallback
-from envs.grasp_env_0422 import GraspFeedbackEnv
+from envs.grasp_env import GraspFeedbackEnv
 import numpy as np
 
 
@@ -97,7 +97,7 @@ class RenderCallback(BaseCallback):
                               f"fric={info['current_friction']:.3f}")
 
                     if done:
-                        status = "✅ 성공" if not info['dropped'] and not info['squeezed_out'] else "❌ 실패"
+                        status = " 성공" if not info['dropped'] and not info['squeezed_out'] else " 실패"
                         print(f"  에피소드 종료! step={step} {status}")
                         break
 
@@ -176,6 +176,6 @@ for material in MATERIALS:
 
     # 최종 저장
     model.save(f"./models/grasp_{material}_final")
-    print(f"✅ {material} 학습 완료! → models/grasp_{material}_final.zip")
+    print(f" {material} 학습 완료! → models/grasp_{material}_final.zip")
 
-print("\n🎉 모든 재질 학습 완료!")
+print("\n 모든 재질 학습 완료!")

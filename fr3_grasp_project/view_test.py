@@ -1,4 +1,4 @@
-# view_env.py
+# view_test.py
 import mujoco
 import mujoco.viewer
 import os

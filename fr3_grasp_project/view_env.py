@@ -40,10 +40,10 @@ with mujoco.viewer.launch_passive(model, data) as viewer:
             data.ctrl[4] = 0
             data.ctrl[5] = 1.57079
             data.ctrl[6] = -0.7853
-           # data.ctrl[7] = 128
+           # data.ctrl[7] = 128 
             mujoco.mj_step(model, data)
-            viewer.sync()  # ← 핵심! 뷰어도 같이 업데이트
-        print("초기화 완료!")
+            viewer.sync()  
+        print("초기화 완료")
 
     init_scene()
 
@@ -70,7 +70,7 @@ with mujoco.viewer.launch_passive(model, data) as viewer:
 
         if step % 100 == 0:
             print(f"step {step:5d} | 물체 z: {obj_z:.4f} | "
-                  f"{'✅ 잡힘' if obj_z > 0.4 else '❌ 떨어짐'}")
+                  f"{'잡힘' if obj_z > 0.4 else ' 떨어짐'}")
 
         step += 1
         time.sleep(0.002)

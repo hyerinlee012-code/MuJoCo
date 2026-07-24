@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from stable_baselines3 import SAC
 from stable_baselines3.common.env_checker import check_env
 from stable_baselines3.common.callbacks import EvalCallback, CheckpointCallback, BaseCallback
-from envs.grasp_env_0422 import GraspFeedbackEnv
+from envs.grasp_env import GraspFeedbackEnv
 import numpy as np
 
 
@@ -25,14 +25,14 @@ class DebugCallback(BaseCallback):
         if self.num_timesteps % 200 == 0 and self.ep_infos:
             slips    = [i["slip_velocity"]           for i in self.ep_infos]
             forces   = [i["final_force"]             for i in self.ep_infos]
-            drifts   = [i.get("total_drift", 0)      for i in self.ep_infos]  # ✅ z_drift → total_drift
+            drifts   = [i.get("total_drift", 0)      for i in self.ep_infos]  # z_drift → total_drift
             dropped  = [i["dropped"]                 for i in self.ep_infos]
             squeezed = [i.get("squeezed_out", False) for i in self.ep_infos]
 
             print(f"\n[step {self.num_timesteps}] 보상 원인 분석:")
             print(f"  slip_vel  평균: {np.mean(slips):.4f}  최대: {np.max(slips):.4f}")
             print(f"  force     평균: {np.mean(forces):.2f}N  범위: {np.min(forces):.2f}~{np.max(forces):.2f}N")
-            print(f"  drift     평균: {np.mean(drifts)*1000:.2f}mm  최대: {np.max(drifts)*1000:.2f}mm")  # ✅ mm 단위로 출력
+            print(f"  drift     평균: {np.mean(drifts)*1000:.2f}mm  최대: {np.max(drifts)*1000:.2f}mm")  #  mm 단위로 출력
             print(f"  dropped:  {sum(dropped)}/{len(dropped)}")
             print(f"  squeezed: {sum(squeezed)}/{len(squeezed)}")
             self.ep_infos = []
@@ -101,6 +101,6 @@ for material in MATERIALS:
 
     # 최종 모델 저장
     model.save(f"./models/grasp_{material}_final")
-    print(f"✅ {material} 학습 완료! → models/grasp_{material}_final.zip")
+    print(f" {material} 학습 완료! → models/grasp_{material}_final.zip")
 
-print("\n🎉 모든 재질 학습 완료!")
+print("\n 모든 재질 학습 완료!")

@@ -10,7 +10,7 @@
 #   낮은 friction + 무거운 mass → 최대 파지력으로 간신히 가능 (어려운 케이스)
 #   높은 friction + 가벼운 mass → 최소 파지력으로도 충분    (쉬운 케이스)
 
-import numpy as np  # random 대신 numpy 사용 (시드 제어, 재현성 보장)
+import numpy as np  
 
 
 MATERIAL_CONFIGS = {
